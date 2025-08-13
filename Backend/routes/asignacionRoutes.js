@@ -8,12 +8,12 @@ import {
 const router = Router();
 
 // Crea asignación y sincroniza grupo (usa fn_asignar_y_sync)
-router.post('/', assign);
+router.post('/asignaciones', assign);
 
 // Elimina asignación y sincroniza grupo (usa fn_sync_grupo)
-router.delete('/', unassign);
+router.delete('/asignaciones', unassign);
 
 // Recalcula todos los grupos desde tabla intermedia (usa fn_sync_todos)
-router.post('/recalcular', resyncAll); // ?umbral=3
+router.post('/asignaciones/recalcular', resyncAll); // ?umbral=3
 
 export default router;

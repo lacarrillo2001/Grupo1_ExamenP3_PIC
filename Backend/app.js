@@ -25,10 +25,10 @@ app.get('/', (_req, res) => res.send('Hola mundo'));
 
 
 
-app.use('/investigadores', investigadorRoutes);
-app.use('/lineas', lineaRoutes);
-app.use('/disponibilidades', disponibilidadRoutes);
-app.use('/asignaciones', asignacionRoutes);
-app.use('/grupos', grupoRoutes);
+app.use('/api', investigadorRoutes);
+app.use('/api', lineaRoutes);
+app.use('/api', disponibilidadRoutes);
+app.use('/api', asignacionRoutes);
+app.use('/api', grupoRoutes);
 
 export default app;
